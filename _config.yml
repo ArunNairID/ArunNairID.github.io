@@ -13,11 +13,11 @@ date_format: "%b %-d, %Y"
 # Optional features
 animated:             true
 show_related_posts:   true
-show_post_footers:    ture
+show_post_footers:    true
 show_social_icons:    true
 ajaxify_contact_form: true
 enable_mathjax: true
-extended_fonts: true
+extended_fonts: false
 enable_anchorjs: true
 
 # Disqus post comments
