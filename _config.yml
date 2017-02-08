@@ -1,9 +1,9 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     ""
+title:       Machine Learning & Scientific Computing
+email:       timeseriesdata@gmail.com
+author:      Arun Nair
+description: "Machine Learning, Scientific Computing and Analytics"
+baseurl:     "arunnairid-github-io"
 url:         ""
 date_format: "%b %-d, %Y"
 
@@ -11,7 +11,7 @@ date_format: "%b %-d, %Y"
 google_analytics: UA-91622315-1
 
 # Optional features
-animated:             true
+animated:             false
 show_related_posts:   true
 show_post_footers:    true
 show_social_icons:    true
@@ -22,7 +22,7 @@ enable_anchorjs: true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: arunnairid-github-io
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
