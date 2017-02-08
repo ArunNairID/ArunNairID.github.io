@@ -5,7 +5,7 @@ author:      Arun Nair
 description: "Machine Learning, Scientific Computing and Analytics"
 baseurl:     ""
 url:         ""
-date_format: "%b %-d, %Y"
+#date_format: "%b %-d, %Y"
 
 # Google analytics
 google_analytics: UA-91622315-1
