@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Machine Learning
+title: Convolution Nets
 permalink: /about/
 tags: about
 published: true
