@@ -102,5 +102,9 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-mentions
+  - jemoji
+  - jekyll-paginate
+  - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
