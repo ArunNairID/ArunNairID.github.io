@@ -1,7 +1,7 @@
 ---
 layout: page
-title: arun
+title: ''
 permalink: /about/
 tags: about
-published: false
+published: true
 ---
