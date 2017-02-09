@@ -27,7 +27,7 @@
 .site-header nav a:active {
   color: #319A31;
   opacity: 1;
-  border-bottom: 2px solid #319A31;
+  border-bottom: 2px solid: #319A31;
 }
 
 .site-nav a + a {
@@ -39,7 +39,7 @@
 .posts .post a:hover .post-meta,
 .posts .post a:hover .post-title,
 .posts .post a:hover .post-summary {
-  opacity: 0.88;
+  opacity: 0.88; color: #319A31;
 }
 
 .site-header {
