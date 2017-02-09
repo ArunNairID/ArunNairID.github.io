@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Convolution Nets
+title: arun
 permalink: /about/
 tags: about
 published: true
 ---
-
-
