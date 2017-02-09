@@ -2,46 +2,29 @@
 layout: default
 published: true
 ---
+{% assign posts_count = (paginator.posts | size) %}
 
+<div class="home">
+  {% if posts_count > 0 %}
+    <div class="posts">
+      {% for post in paginator.posts %}
+        <div class="post py3">
+          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+          <p class="post-summary">
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
 
-layout: default
-tags: index
----
-
-<div class="presentation">
-  <h2>HELLO, I'M</h2>
-  <h1>FERNANDA ANDRADE</h1>
-  <h3>Developer</h3>
+    {% include pagination.html %}
+  {% else %}
+    <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
+  {% endif %}
 </div>
 
-<div class="projects mt3 mb2">
-  <div class="clearfix">
-    <div class="col sm-col-5 md-col-4 p3 mt2">
-      <h2 class="white">Selected Work</h2>
-      <a href="portfolio" class="button-sp button-sp wayra caps mt1">Portfolio</a>
-    </div>
-
-    <div class="col sm-col-7 md-col-8 px4 mt2">
-      <a href="portfolio/quitomap.html"><div class="projects-item">
-        <div class="css-device css-device--browser" data-url="http://ferandrade.com/quito-crime-map/">
-          <img class="css-device__image" src="images/quitocrimemap.jpg" alt="Crimen en Quito">
-        </div>
-        <div class="projects-overlay">
-          <h4>Quito Crime Map <i class="fa fa-arrow-right"></i></h4>
-        </div>
-      </div></a>
-    </div>
-
-    <div class="col col-12 px4 mt3">
-      <a href="portfolio/nocturna.html"><div class="projects-item">
-        <div class="css-device css-device--browser" data-url="http://nocturna.com/">
-          <img class="css-device__image" src="images/nocturna.jpg" alt="Nocturna">
-        </div>
-        <div class="projects-overlay">
-          <h4>Nocturna Ediciones <i class="fa fa-arrow-right"></i></h4>
-        </div>
-      </div></a>
-    </div>
-
-  </div>
-</div>
